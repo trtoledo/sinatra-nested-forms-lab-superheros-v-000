@@ -8,6 +8,6 @@ class Hero
        @power = args[:power]
        @bio = args[:bio]
        HEROES << self
-     end
+  end
 
 end
