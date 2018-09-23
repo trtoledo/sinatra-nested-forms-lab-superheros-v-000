@@ -14,8 +14,4 @@ class App < Sinatra::Base
         @members = params[:team][:members]
         erb :team
       end
-
-
-
-
 end
