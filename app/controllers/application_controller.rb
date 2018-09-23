@@ -22,10 +22,10 @@ class App < Sinatra::Base
 
         erb :team
 
-        @team_name = params[:team][:name]
-        @team_motto = params[:team][:motto]
-        @heroes = params[:team][:heroes]
-        erb :'/team'
+        # @team_name = params[:team][:name]
+        # @team_motto = params[:team][:motto]
+        # @heroes = params[:team][:heroes]
+        # erb :'/team'
       end
 
 
