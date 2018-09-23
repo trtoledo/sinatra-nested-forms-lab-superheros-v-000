@@ -8,7 +8,7 @@
     <h1><%=@team_name %></h1>
     <h2>Team Motto: <%= @team_motto %></h2>
 
-    <% params[:team][:members].each do |hero| %>
+    <% @heroes.each do |hero| %>
   <div class="hero">
     <p>Hero Name: <%= hero.name %></p><br>
     <p>Hero Power: <%= hero.power %></p><br>
