@@ -9,11 +9,12 @@
     <h2>Team Motto: <%= @team_motto %></h2>
 
     <% @heroes.each do |hero| %>
-      <h2>Hero Name: <%=hero[:name] %></h2>
-      <li>Hero Power: <%= hero[:power]%></li>
-      <li>Hero Biography: <%= hero[:biography]%></li>
-    <p></p>
-    <% end %>
+  <div class="hero">
+    <p>Hero Name: <%= hero.name %></p><br>
+    <p>Hero Power: <%= hero.power %></p><br>
+    <p>Hero Biography: <%= hero.bio %></p><br>
+  </div><br>
+<% end %>
 
 
 
