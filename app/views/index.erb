@@ -5,10 +5,14 @@
     <title>Heroes form</title>
   </head>
   <body>
-    <h1>Create a Team and Heroes!</h1>
-    <form action="/teams" method="post">
-    <br><lable> Team Name: <input type="text" id="team_name" name= "team[name]"></lable>
-    <br><lable> Team Motto: <input type="text" id="team_motto" name= "team[motto]"></lable>
+    <h1><%= @team.name %></h1>
+
+    <h2><%= @team.motto %></h2>
+
+    <h2></h2>
+
+    <br><lable> Team Name: <input type="text" id="team_name" name= "team[name]"><%= @team.name %></lable>
+    <br><lable> Team Motto: <input type="text" id="team_motto" name= "team[motto]"><%= @team.motto %></lable>
 
     <h2>Hero 1</h2>
     <br><lable> Hero`s Name: <input type="text" id="hero_name_1" name= "hero[name]"></lable>
